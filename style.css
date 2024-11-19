@@ -56,6 +56,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .contactForm {
@@ -173,10 +174,6 @@ center {
     transform: translateY(-5px);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.6);
 }
-.interest {
-    padding: 3rem 0rem;
-    height: auto;
-}
 
 .section-heading {
     font-size: 2rem;
@@ -185,6 +182,10 @@ center {
     margin-bottom: 2rem;
 }
 
+.interest {
+    padding: 3rem 0rem;
+    height: auto;
+}
 .interest-list {
     width: 100%;
     display: flex;
@@ -346,7 +347,12 @@ center {
     border-radius: 10px;
     transition: width 0.5s ease-in-out;
 }
-
+.skill-description {
+    font-size: 0.9rem;
+    color: #ccc;
+    margin-top: 0.5rem;
+    text-align: left;
+}
 .skills:hover .skill-progress {
     box-shadow: 0 0 10px #00aaff, 0 0 20px rgba(0, 170, 255, 0.5);
 }
@@ -478,6 +484,45 @@ center {
     height: 300px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.contactInfo {
+    display: flex;
+    justify-content: space-between; /* Equal spacing between cards */
+    gap: 1rem; /* Space between cards */
+    padding: 2rem 0rem;
+    width: 94%;
+    box-sizing: border-box;
+}
+
+.contact-card {
+    flex: 1; /* Makes all cards the same size */
+    background-color: #333;
+    color: #fff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    margin: 0.5rem; /* Optional spacing for visual balance */
+}
+
+.contact-card h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    color: #00aaff;
+}
+
+.contact-card p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.contact-card a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact-card a:hover {
+    text-decoration: underline;
 }
 
 
