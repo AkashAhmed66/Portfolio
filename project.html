@@ -10,7 +10,12 @@
     <div class="conteiner">
         <div class="header">
             <div class="navbar">
-                <ul class="menu">
+                <div class="menu-toggle" id="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="menu" id="menu">
                     <li class="menuItem"><a href="index.html">Home</a></li>
                     <li class="menuItem"><a href="skilll.html">Skill</a></li>
                     <li class="menuItem"><a class="active" href="project.html">Project</a></li>
@@ -68,5 +73,21 @@
             </div>
         </div>
     </div>
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu');
+    
+        menuToggle.addEventListener('click', () => {
+            menu.classList.toggle('open');
+        });
+        document.addEventListener('click', (event) => {
+            console.log(event.target)
+            if (menu.classList.contains('open') && !menu.contains(event.target) && !menuToggle.contains(event.target)) {
+                menuToggle.classList.remove('open');
+                menu.classList.remove('open');
+            }
+        });
+    
+    </script>
 </body>
 </html>
