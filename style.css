@@ -548,7 +548,15 @@ center {
 .contact-card a:hover {
     text-decoration: underline;
 }
+.logo {
+    margin-right: auto; 
+    margin-left: 6%;
+}
 
+.logo img {
+    max-height: 50px;
+    display: block;
+}
 @media (max-width: 768px) {
     .menu {
         flex-direction: column;
@@ -599,7 +607,10 @@ center {
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
         transition: transform 0.3s, box-shadow 0.3s;
     }
-    
+    .logo {
+        margin-right: auto; 
+        margin-left: 2%;
+    }
 
 }
 @media (max-width: 1000px) {
